@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기억하는 숲</title>
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="top">
+        <div class="wrapper">
+          <ul class="header-util">
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="zoom_control('plus');"
+                title="확대버튼"
+                ><img
+                  src="./images/layout/ico_plus.svg"
+                  alt="화면확대"
+                />화면확대</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="zoom_control('reset');"
+                title="원래대로"
+                ><img
+                  src="./images/layout/ico_restart.svg"
+                  alt="원래대로"
+                />원래대로</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="zoom_control('minus');"
+                title="축소버튼"
+                ><img
+                  src="./images/layout/ico_minus.svg"
+                  alt="화면축소"
+                />화면축소</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="hd">
+          <div class="wrapper">
+            <div class="logo">
+              <a href="./index.html"
+                ><img
+                  src="./images/layout/logo.jpg"
+                  alt="기억하는 숲 치매 예방 웹"
+              /></a>
+            </div>
+            <ul class="util"></ul>
+          </div>
+        </div>
+        <nav>
+          <ul class="wrapper">
+            <li><a href="./html/introduce.html">기억하는 숲 소개</a></li>
+            <li><a href="./html/businessarea.html">사업영역</a></li>
+            <li><a href="./html/program.html">프로그램</a></li>
+            <li><a href="./html/data.html">치매예방정보</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section.sc01 -->
+    <section class="sc01">
+      <h3>
+        치매, <span>관심</span>이라는 새싹이 자라면<br /><span>예방</span>이라는
+        꽃을 피웁니다.
+      </h3>
+      <i><img src="./images/main/ico_scroll.png" alt="scroll" /></i>
+    </section>
+
+    <!-- section.sc02 -->
+    <section class="sc02">
+      <div class="wrapper">
+        <ul class="box_list">
+          <li>
+            <div class="image-container">
+              <img src="./images/contents/contents1.jpg" alt="컨텐츠1" />
+              <p class="image-description">메인화면</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <img src="./images/contents/contents2.jpg" alt="컨텐츠2" />
+              <p class="image-description">숫자기억하기컨텐츠</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <img src="./images/contents/contents3.jpg" alt="컨텐츠3" />
+              <p class="image-description">산수컨텐츠</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-container">
+              <img src="./images/contents/contents4.jpg" alt="컨텐츠4" />
+              <p class="image-description">OX컨텐츠</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section.sc03 -->
+    <section class="sc03">
+      <div class="wrapper">
+        <!-- 공지사항 -->
+        <div class="notice">
+          <div class="tit">
+            <h3>공지사항</h3>
+            <a href="#none"
+              ><img src="./images/main/ico_plus.svg" alt="더 보기"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="#none">
+                <span class="date">
+                  <span class="dd"></span>
+                  <span class="yymm"></span>
+                </span>
+                <span class="txt"
+                  >
+                  </span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <span class="date">
+                  <span class="dd"></span>
+                  <span class="yymm"></span>
+                </span>
+                <span class="txt"
+                  >
+                  </span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <span class="date">
+                  <span class="dd"></span>
+                  <span class="yymm"></span>
+                </span>
+                <span class="txt"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <span class="date">
+                  <span class="dd"></span>
+                  <span class="yymm"></span>
+                </span>
+                <span class="txt"
+                  >
+                  </span>
+            
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- faq -->
+        <div class="faq">
+          <div class="tit">
+            <h3>FAQ</h3>
+            <a href="#none"
+              ><img src="./images/main/ico_plus.svg" alt="더 보기"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="#none">
+                
+                <span class="txt"
+                  >
+                 </span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                
+                <span class="txt"
+                  >
+                  </span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                
+                <span class="txt">
+
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                
+                <span class="txt"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- section.sc04 -->
+    <section class="sc04">
+      <div class="wrapper">
+        <div class="tit">
+          <h3>제휴파트너</h3>
+          <div class="control">
+            <div class="prev">
+              <img src="./images/main/ico_arrowLeft.svg" alt="이전" />
+            </div>
+            <div class="pause">
+              <img src="./images/main/ico_pause.svg" alt="정지" />
+            </div>
+            <div class="play">
+              <img src="./images/main/ico_play.svg" alt="재생" />
+            </div>
+            <div class="next">
+              <img src="./images/main/ico_arrowRight.svg" alt="다음" />
+            </div>
+          </div>
+        </div>
+        <div class="banner_list swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#none"><img src="./partner/namseoul.png" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none"><img src="" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="wrapper">
+        <div class="lf">
+          <img
+            src="./images/layout/ft_logo.png"
+            alt="기억하는숲 치매 예방 웹"
+          />
+        </div>
+        <div class="rt">
+          <ul class="info">
+            <li>회사명 : 기억하는숲</li>
+            <li>대표자명 : ABO</li>
+            <li>주소 : 충청남도 천안시 서북구 성환읍 대학로 91</li>
+            <li>사업자등록번호 : 123-45-67890</li>
+          </ul>
+          <ul class="info">
+            <li>E-mail : forest12@forest.co.kr</li>
+            <li>Tel : 041-580-2000</li>
+            <li>Fax : 041-580-2000</li>
+          </ul>
+          <p class="copyright">COPYRIGHT © FOREST. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+  const buttonWrap = document.querySelector(".util");
+
+  /*const firebaseConfig = {
+    apiKey: "AIzaSyBv2RxptnoAiZni0UcQVbsVfuxPDzWWoPU",
+    authDomain: "enjoy-c798e.firebaseapp.com",
+    databaseURL: "https://enjoy-c798e-default-rtdb.firebaseio.com",
+    projectId: "enjoy-c798e",
+    storageBucket: "enjoy-c798e.appspot.com",
+    messagingSenderId: "896939462499",
+    appId: "1:896939462499:web:3fa3f0a2d3142a33388d56",
+    measurementId: "G-GRX64FJXC3",
+  };*/
+
+  const firebaseConfig = {
+      apiKey: "AIzaSyBFxOO-2vkTytuSzfXwAl-VUcDy5KAmKy0",
+      authDomain: "aboproject-a71a0.firebaseapp.com",
+      projectId: "aboproject-a71a0",
+      storageBucket: "aboproject-a71a0.appspot.com",
+      messagingSenderId: "980193346276",
+      appId: "1:980193346276:web:5550f15c99443daa04e2f1",
+      measurementId: "G-PZEJFXPC8L"
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+  const auth = getAuth();
+
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      showLoginStateButton();
+    } else {
+      showLogoutStateButton();
+    }
+
+    function createButtonElement(iconSrc, iconAlt, href, text) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      const i = document.createElement("i");
+      const img = document.createElement("img");
+
+      img.src = iconSrc;
+      img.alt = iconAlt;
+      i.appendChild(img);
+      a.appendChild(i);
+      a.href = href;
+      a.insertAdjacentText("beforeend", text);
+      li.appendChild(a);
+
+      return li;
+    }
+
+      function createButtonBlankElement(iconSrc, iconAlt, href, text) {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          const i = document.createElement("i");
+          const img = document.createElement("img");
+
+          img.src = iconSrc;
+          img.alt = iconAlt;
+          i.appendChild(img);
+          a.appendChild(i);
+          a.href = href;
+          a.target = "_blank";
+          a.insertAdjacentText("beforeend", text);
+          li.appendChild(a);
+
+          return li;
+      }
+
+    function showLoginStateButton() {
+      const userInfoButton = createButtonElement(
+        "./images/layout/ico_person.svg",
+        "사람 아이콘",
+        "./html/userinfo.html",
+        "회원정보"
+      );
+      const logoutButton = createButtonElement(
+        "./images/layout/ico_secret.svg",
+        "로그아웃 아이콘",
+        "./html/logout.html",
+        "로그아웃"
+      );
+	  const contentsButton = createButtonBlankElement(
+		"./images/layout/ico_plus.svg",
+		"컨텐츠 실행",
+		"./contents/index.html",
+		"컨텐츠 실행"
+	  );
+	  
+      buttonWrap.appendChild(contentsButton);
+      buttonWrap.appendChild(logoutButton);
+      buttonWrap.appendChild(userInfoButton);
+    }
+
+    function showLogoutStateButton() {
+      const loginButton = createButtonElement(
+        "./images/layout/ico_secret.svg",
+        "자물쇠 아이콘",
+        "./html/login.html",
+        "로그인"
+      );
+      const joinButton = createButtonElement(
+        "./images/layout/ico_person.svg",
+        "사람 아이콘",
+        "./html/join.html",
+        "회원가입"
+      );
+
+      buttonWrap.appendChild(loginButton);
+      buttonWrap.appendChild(joinButton);
+    }
+  });
+</script>
